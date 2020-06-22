@@ -19,7 +19,6 @@ def list2(request):
     }
     return JsonResponse(data)
 
-
 @api_view(['GET'])
 def clearDB(request):
     DNA.objects.all().delete()
